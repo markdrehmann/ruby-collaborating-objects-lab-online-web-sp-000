@@ -26,7 +26,7 @@ class Artist
   end
 
   def print_songs
-    puts self.songs.map { |song| song.name }
+    puts songs.map { |song| song.name }
   end
 
   def self.all
