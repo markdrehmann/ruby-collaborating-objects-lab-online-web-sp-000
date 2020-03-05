@@ -7,7 +7,9 @@ class MP3Importer
   end
 
   def files
-    @files = Dir.entries(@path).reject {|f| File.directory?(f) || f[0].include?('.')}
+    @files = Dir.entries(@path).reject do |f|
+      File.directory?(f) || f[0].include?('.')
+    end
   end
 
   def import
