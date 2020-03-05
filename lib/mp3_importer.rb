@@ -7,7 +7,7 @@ class MP3Importer
   end
 
   def files
-    @files = Dir.entries("./spec/fixtures")
+    @files = Dir.entries("./spec/fixtures/mp3s")
   end
 
   def import(file_name)
