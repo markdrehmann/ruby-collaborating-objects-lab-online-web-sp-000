@@ -19,6 +19,7 @@ class Artist
     else
       song.artist.name = name
     end
+  end
 
   def self.all
     @@all
