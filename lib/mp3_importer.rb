@@ -10,7 +10,7 @@ class MP3Importer
     @files = Dir.entries("./spec/fixtures/mp3s")
   end
 
-  def import(file_name)
+  def import
     Song.new_by_filename(file_name)
   end
 
