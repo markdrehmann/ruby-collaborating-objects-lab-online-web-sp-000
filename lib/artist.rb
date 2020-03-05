@@ -25,7 +25,7 @@ class Artist
     @songs # Song.all.collect { |artist| artist == self }
   end
 
-  def find_or_create_by_name(name)
+  def self.find_or_create_by_name(name)
     if @@all.include? == name
       name
     else
