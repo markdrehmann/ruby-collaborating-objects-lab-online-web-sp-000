@@ -9,9 +9,9 @@ class Song
   end
 
   def self.new_by_filename(file_name)
-    file_name.split(" - ").chomp(".mp3")
-    song = Song.new(file_name[1])
-    song.artist = file_name[0]
+    data = file_name.split(" - ").chomp(".mp3")
+    song = Song.new(data[1])
+    song.artist = data[0]
   end
 
   def self.all
