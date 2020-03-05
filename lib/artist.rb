@@ -22,7 +22,7 @@ class Artist
   end
 
   def songs
-    Song.collect { |artist| artist == self }
+    @songs # Song.collect { |artist| artist == self }
   end
 
   def print_songs
